@@ -105,7 +105,7 @@ class Player:
         self.width = PLAYER_WIDTH
         self.height = PLAYER_HEIGHT
         self.x = WIDTH // 2 - self.width // 2
-        self.y = HEIGHT - 150  # Pozycja startowa nad platformą startową
+        self.y = HEIGHT - 150 
         self.vel_x = 0
         self.vel_y = 0
         self.speed = 5
@@ -473,11 +473,11 @@ def game_loop(difficulty):
     
     # Stwórz platformę startową na całą szerokość
     starting_platform = Platform(0, HEIGHT - 100, WIDTH, 0)
-    starting_platform.color = (50, 50, 100)  # Ciemnoniebieski kolor dla platformy startowej
+    starting_platform.color = (50, 50, 100) 
     
     # Generuj początkowe platformy
     platforms = generate_platforms(30, HEIGHT - 150)
-    platforms.insert(0, starting_platform)  # Dodaj platformę startową jako pierwszą
+    platforms.insert(0, starting_platform)  
     
     # Ustawienia lawy
     difficulty_settings = DIFFICULTY_SETTINGS[difficulty]
@@ -558,7 +558,7 @@ def game_loop(difficulty):
         
         screen.fill(COLORS['BLACK'])
         
-        # Proste ustawienie koloru tła na podstawie aktualnego regionu
+        # Ustawienie koloru tła na podstawie aktualnego regionu
         current_region = player.current_region
         bg_color = REGIONS[current_region]["color"]
         screen.fill(bg_color)
@@ -578,13 +578,13 @@ def game_loop(difficulty):
         
         region_name = REGIONS[player.current_region]["name"]
         region_text = small_font.render(f"Region: {region_name}", True, COLORS['WHITE'])
-        screen.blit(region_text, (10, 40))  # Przesunięte niżej
+        screen.blit(region_text, (10, 40))  
         
         # Pasek energii do hyper skoku
         coin_bar_width = 150
         coin_bar_height = 15
         coin_bar_x = 10
-        coin_bar_y = 90  # Przesunięte wyżej
+        coin_bar_y = 90 
         
         pygame.draw.rect(screen, (200, 200, 200), (coin_bar_x, coin_bar_y, coin_bar_width, coin_bar_height))
         
