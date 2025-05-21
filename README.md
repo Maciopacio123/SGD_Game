@@ -2,6 +2,8 @@
 
 Gra platformowa inspirowana klasycznym Icy Tower, stworzona w PyGame. Wspinaj się jak najwyżej, unikając przeszkód i zbierając power-upy!
 
+[Link do prezentacji projektu](https://www.canva.com/design/DAGoHOnrRVw/3a_lxSfqsr05ycl9wtO-cQ/edit?utm_content=DAGoHOnrRVw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
 ## Opis
 W grze sterujesz postacią, która musi wspinać się coraz wyżej po platformach. Każdy region wprowadza nowe wyzwania i zwiększa trudność rozgrywki. Zbieraj monety, aby aktywować specjalny Hyper Jump, i unikaj kolców oraz lawy!
 
@@ -42,7 +44,7 @@ python icy_tower.py
 3. **Interfejs i struktura**
    - Menu główne z wyborem trudności
    - System pauzy
-   - Zaawansowany HUD
+   - HUD
    - Ekran końca gry
 
 4. **Mechaniki specjalne**
